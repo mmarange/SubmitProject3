@@ -142,9 +142,9 @@
             <div class="nav bg-dark py-5"></div>
 
             <!-- ***************** Dashboard *********************** -->
-            <div class="row" style="padding: 40px;">
+            <div class="row" style="padding: 15px;">
                 <div class="col-lg-3 col-sm-6">
-                    <div class="card border-light rounded h-100">
+                    <div class="card border-light rounded h-80">
                         <div class="stat-widget-two card-body">
                             <div class="stat-content">
                                 <div class="stat-text">Initial Investment</div>
@@ -153,14 +153,14 @@
                             </div>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-success w-85" role="progressbar"
-                                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6">
-                    <div class="card border-light rounded h-100">
+                    <div class="card border-light rounded h-80">
                         <div class="stat-widget-two card-body">
                             <div class="stat-content">
                                 <div class="stat-text">Maximum Possible Return</div>
@@ -169,14 +169,14 @@
                             </div>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-primary w-75" role="progressbar"
-                                    aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6">
-                    <div class="card border-light rounded h-100">
+                    <div class="card border-light rounded h-80">
                         <div class="stat-widget-two card-body">
                             <div class="stat-content">
                                 <div class="stat-text">Minimum Possible Return</div>
@@ -185,14 +185,14 @@
                             </div>
                             <div class="progress">
                                 <div class="progress-bar progress-bar-warning w-50" role="progressbar"
-                                    aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6">
-                    <div class="card border-light rounded h-100">
+                    <div class="card border-light rounded h-80">
                         <div class="stat-widget-two card-body">
                             <div class="stat-content">
                                 <div class="stat-text">Actual Return</div>
@@ -200,7 +200,7 @@
                                 <p id="act-return_date">Divestment Date:</p>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar progress-bar-danger w-65" role="progressbar" aria-valuenow="65"
+                                <div class="progress-bar progress-bar-danger w-65" role="progressbar" aria-valuenow="100"
                                     aria-valuemin="-100" aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -216,7 +216,7 @@
                 <!--Start of panel-->
                 <div class="col-md-12">
                     <nav class="navbar-dark bg-dark">
-                        <h2 style="text-align:center; color:#F4F6F6; padding-top:40px; padding-bottom:40px;">Investment
+                        <h2 style="text-align:center; color:#F4F6F6; padding-top:5px; padding-bottom:5px;">Investment
                             Performance</h4>
                     </nav>
                 </div>
@@ -243,12 +243,12 @@
                     </div>
                 </div>
 
-                <div class="col-md-3" id="card_panel">
+                <div class="col-md-3" >
                     <!-- investment amount starts -->
                     <div class="card border-light rounded h-80" style="background-color:#ECF0F1;">
                         <div class="card-body">
                             <h3 class="card-title" style="text-align: center; padding: 0em;">Amount Invested</h3>
-                            <span class="text-danger">*</span></p>
+                            
                             <!-- <p class="card-text">Investment amount ($)  -->
                             <hr>
                             <div class="form-validation">
@@ -267,7 +267,7 @@
                     </div>\
                 </div>
 
-                <div class="col-md-3" id="card_panel">
+                <div class="col-md-3">
                     <!-- Date picker starts -->
                     <div class="card border-light rounded h-80" style="background-color:#ECF0F1;">
                         <div class="card-body">
@@ -283,7 +283,7 @@
                     </div>
                 </div> <!-- Date picker ends -->
 
-                <div class="col-md-3" id="card_panel">
+                <div class="col-md-3">
                     <div class="card border-light rounded h-80" style="background-color:#ECF0F1;">
                         <div class="card-body">
                             <h3 class="card-title" style="text-align: center;">Analyse your investment</h3>
@@ -296,7 +296,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+          \
 
             <!--**********************************-->
             <!--Start of Interactive Dashboard-->
@@ -306,65 +306,40 @@
                 <!--Start of panel-->
                 <div class="col-md-12">
                     <nav class="navbar-dark bg-dark">
-                        <h5 style="text-align:center; color:#F4F6F6; padding-top:10px; padding-bottom:10px;">Track Your
+                        <h5 style="text-align:center; color:#F4F6F6; padding-top:5px; padding-bottom:5px;">Track Your
                             Investment</h5>
                     </nav>
                 </div>
-
-                <div class="container-fluid">
-                    <div class="row">
+            </div>
+                
+                    <div class="row" style="padding:50px">
                         <div class="col-md-12">
                             <div class="tab" role="tabpanel">
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
                                     <li role="presentation" class="active" ><a id='comparison-tab' href="#Section1" aria-controls="home"
-                                            role="tab" data-toggle="tab">Invested</a></li>
+                                            role="tab" data-toggle="tab">Investment Tracking By Amount</a></li>
                                     <li role="presentation"><a href="#Section2" aria-controls="profile" role="tab"
-                                            data-toggle="tab">Share</a></li>
+                                            data-toggle="tab">Investment Tracking By Share Price</a></li>
 
                                 </ul>
                                 <!-- Tab panes -->
                                 <div class="tab-content tabs">
-                                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
-                                        <h3>Invested</h3>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <!-- <h4 class="card-title">Share</h4> -->
-                                                <!--Get Current Ticker-->
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-xl-12 col-lg-12">
-                                                        <div id="investment_plot"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
+                                    <div role="tabpanel" class="tab-pane fade in show active" id="Section1">
+                                        
+                                        <div id="investment_plot"></div>
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="Section2">
-                                        <h3>Share</h3>
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <!-- <h4 class="card-title">Share</h4> -->
-                                                <!--Get Current Ticker-->
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <div class="col-xl-12 col-lg-12">
-                                                        <div id="prices_plot"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div role="tabpanel" class="tab-pane fade in show" id="Section2">
+                                       
+                                        <div id="prices_plot"></div>
                                     </div>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               
+            
 
           
 
@@ -396,44 +371,20 @@
                                 <div class="tab" role="tabpanel">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a id='comparison-tab1' href="#SectionA" aria-controls="home"
-                                                role="tab" data-toggle="tab">Comparison</a></li>
+                                        <li role="presentation" class="active "><a id='comparison-tab1' href="#SectionA" aria-controls="home"
+                                                role="tab" data-toggle="tab">Investment Volatilty: Box Plot Method</a></li>
                                         <li role="presentation"><a href="#SectionB" aria-controls="profile" role="tab"
-                                                data-toggle="tab">Ticker</a></li>
+                                                data-toggle="tab">Investment Volatilty: Candle Method</a></li>
                                     </ul>
                                     <!-- Tab panes -->
                                     <div class="tab-content tabs">
-                                        <div role="tabpanel" class="tab-pane fade in active" id="SectionA">
-                                            <h3>Investment Volatilty Comparison</h3>
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <!-- <h4 class="card-title">Investment Volatilty Comparison</h4> -->
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div id="box_plot"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div role="tabpanel" class="tab-pane fade in show active" id="SectionA" aria-labelledby="profile-tab">
+                                            
+                                            <div id="box_plot"></div>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane fade" id="SectionB">
-                                            <h3>Investment Volatilty: Ticker</h3>
-                                            <div class="col-4">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <!-- <h4 class="card-title">Investment Volatilty: Ticker</h4> -->
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="row">
-                                                            <!--div class="col-xl-12 col-lg-12"-->
-                                                            <div id="candle_plot"></div>
-                                                            <!--/div-->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div role="tabpanel" class="tab-pane in show fade" id="SectionB">
+                                            
+                                            <div id="candle_plot"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -475,24 +426,24 @@
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li role="presentation" class="active"><a id='comparison-tab2' href="#stock-Market-gains"
-                                                aria-controls="home" role="tab" data-toggle="tab">Market
+                                                aria-controls="home" role="tab" data-toggle="tab">US Stock Market
                                                 Gain</a>
                                         </li>
                                         <li role="presentation"><a href="#stock-Market-decline" aria-controls="profile"
-                                                role="tab" data-toggle="tab">Market
+                                                role="tab" data-toggle="tab">US Market Stock Market
                                                 Decline</a></li>
                                         <li role="presentation"><a href="#Interest-Rate-rising" aria-controls="messages"
-                                                role="tab" data-toggle="tab">Rising Int
+                                                role="tab" data-toggle="tab">US Rising Int
                                                 Rates</a></li>
                                         <li role="presentation"><a href="#Interest-Rate-falling"
                                                 aria-controls="messages" role="tab" data-toggle="tab">
-                                                Falling Rates</a>
+                                                US Falling Rates</a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
                                     <div class="tab-content tabs">
                                         <div role="tabpanel" class="tab-pane fade in active" id="stock-Market-gains">
-                                            <h3>Stress Test: US Market Gain</h3>
+                                           
                                             <div class="col-12">
                                                 <div class="card">
                                                     <div class="card-header">
@@ -502,12 +453,12 @@
                                                         <div class="card" id="gains_plot"></div>
                                                     </div>
                                                 </div>
-                                                <p>info about this graph</p>
+                                                
                                             </div>
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="stock-Market-decline">
                                             <div class="col-12">
-                                                <h3>US Market Decline</h3>
+                                                
                                                 <div class="card">
                                                     <div class="card-header">
                                                         <!--h4 class="card-title">Stress Test: US Market Gains</h4-->
@@ -520,7 +471,7 @@
                                             </div>
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="Interest-Rate-rising">
-                                            <h4>Stress Test: Rising Interest Rates</h4>
+                                            
                                             <div class="card">
                                                 <div class="card-header">
                                                     <h4 class="card-title">Stress Test: US Market Gains</h4>
@@ -532,10 +483,10 @@
 
                                         </div>
                                         <div role="tabpanel" class="tab-pane fade" id="Interest-Rate-falling">
-                                            <h3>Falling Interest Rates</h3>
+                                           
                                             <div class="card">
                                                 <div class="card-header">
-                                                    <h4 class="card-title">Stress Test: US Market Gains</h4>
+                                                    
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="card" id="interest_falling_plot"></div>
